@@ -1,0 +1,139 @@
+.ui-header{
+  height: 50px;
+  background-image: none;
+}
+
+.ui-header-buttons{
+  margin-top: 4px;
+}
+
+.ui-header .arrow{
+  width: 28px;
+  height: 28px;
+  float: left;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-right: 6px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.ui-header .arrow i{
+  width: 16px;
+  height: 16px;
+  background-image: url('@static/assets/arrow.png');
+  background-size: 16px 16px;
+  display: none;
+  background-repeat: no-repeat;
+  margin: 6px;
+}
+
+.ui-header .youtube-logo{
+  width: 71px;
+  height: 30px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.ui-header .youtube-logo i{
+  width: 71px;
+  height: 30px;
+  background-image: url('@static/assets/logo.png');
+  background-size: 71px 30px;
+  display: inline-block;
+}
+
+.ui-header.playing .arrow i{
+  display: inline-block;
+}
+
+.ui-header.playing .arrow:hover{
+  border: 1px solid #c2cacd;
+}
+
+.ui-window-content{
+  width: 100%;
+  height: ~'calc(100% - 51px)';
+  position: relative;
+}
+
+.games-list{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate3d(0,0,0);
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.game{
+  width: 320px;
+  /*height: 220px;*/
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.game.disabled{
+  display: none;
+}
+
+.game .game-icon{
+  width: 320px;
+  height: 180px;
+  display: inline-block;
+  background-size: 320px 180px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.game .game-title{
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.game.viking .game-icon{
+  background-image: url("@static/images/viking.jpg")
+}
+
+.game.courtyard .game-icon{
+  background-image: url("@static/images/courtyard.jpg")
+}
+
+.game.tower-defense .game-icon{
+  background-image: url("@static/images/tower-defense.png")
+}
+
+.game.cars .game-icon{
+  background-image: url("@static/images/cars.jpg")
+}
+
+.iframe-container{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate3d(100%,0,0);
+  left: 0px;
+  bottom: 0px;
+  display: none;
+  z-index: 1;
+}
+
+.iframe-container.active{
+  display: block;
+}
+
+.iframe-container iframe{
+  width: 100%;
+  height: 100%;
+}
