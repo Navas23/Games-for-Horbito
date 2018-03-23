@@ -12,12 +12,14 @@ win
 	$('.iframe-container').addClass('active')
 	if($(this).hasClass('viking')){
 		$('.iframe-container iframe').attr('src', 'https://cdn.horbito.com/script/gameDemos/vikingTest2/index.html')
-	}else if($(this).hasClass('coutyard')){
+	}else if($(this).hasClass('courtyard')){
 		$('.iframe-container iframe').attr('src', 'https://cdn.horbito.com/script/gameDemos/courtyard2/index.html')
 	}else if($(this).hasClass('tower-defense')){
 		$('.iframe-container iframe').attr('src', 'https://cdn.horbito.com/script/gameDemos/towerDefense/index.html')
 	}else if($(this).hasClass('cars')){
 		$('.iframe-container iframe').attr('src', 'https://cdn.horbito.com/script/gameDemos/cars/index.html')
+	}else if($(this).hasClass('water')){
+		$('.iframe-container iframe').attr('src', 'https://cdn.horbito.com/app/303/demos/water/index.html')
 	}
 	
 	$('.iframe-container').transition({

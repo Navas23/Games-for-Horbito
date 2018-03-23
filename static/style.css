@@ -117,6 +117,10 @@
   background-image: url("@static/images/cars.jpg")
 }
 
+.game.water .game-icon{
+  background-image: url("@static/images/water.jpg")
+}
+
 .iframe-container{
   background-color: white;
   width: 100%;
